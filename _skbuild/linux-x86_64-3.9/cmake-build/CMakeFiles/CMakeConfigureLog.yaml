@@ -1,0 +1,780 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 5.14.21-150500.55.49-default - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-qnIuid"
+      binary: "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-qnIuid"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/soft/applications/conda/2024-04-29/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-04-29/mconda3/lib"
+      CMAKE_MODULE_PATH: "/home/binkma/.conda/envs/lamino/lib/python3.9/site-packages/skbuild/resources/cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-qnIuid
+        
+        Run Build Command(s):/home/binkma/.conda/envs/lamino/bin/ninja -v cmTC_69958 && [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -c /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -quiet -v -D_GNU_SOURCE /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -version -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccTOJMBj.s
+        GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)
+        	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/binkma/libs/libaio/include
+         /usr/include/c++/7
+         /usr/include/c++/7/x86_64-suse-linux
+         /usr/include/c++/7/backward
+         /usr/lib64/gcc/x86_64-suse-linux/7/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include
+         /usr/include
+        End of search list.
+        GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)
+        	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: b173113e71986c3d169e65fd129b9b5e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/as -v --64 -o CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccTOJMBj.s
+        GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        [2/2] : && /usr/bin/c++  -L/soft/applications/conda/2024-04-29/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-04-29/mconda3/lib -v CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_69958   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_69958' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/cc41cUNC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_69958 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/soft/applications/conda/2024-04-29/mconda3/lib -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/binkma/libs/libaio/lib -L. -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. --enable-new-dtags -rpath /soft/applications/conda/2024-04-29/mconda3/lib CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_69958' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/binkma/libs/libaio/include]
+          add: [/usr/include/c++/7]
+          add: [/usr/include/c++/7/x86_64-suse-linux]
+          add: [/usr/include/c++/7/backward]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/include]
+          add: [/usr/local/include]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/binkma/libs/libaio/include] ==> [/home/binkma/libs/libaio/include]
+        collapse include dir [/usr/include/c++/7] ==> [/usr/include/c++/7]
+        collapse include dir [/usr/include/c++/7/x86_64-suse-linux] ==> [/usr/include/c++/7/x86_64-suse-linux]
+        collapse include dir [/usr/include/c++/7/backward] ==> [/usr/include/c++/7/backward]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/include] ==> [/usr/lib64/gcc/x86_64-suse-linux/7/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed] ==> [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include] ==> [/usr/x86_64-suse-linux/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/binkma/libs/libaio/include;/usr/include/c++/7;/usr/include/c++/7/x86_64-suse-linux;/usr/include/c++/7/backward;/usr/lib64/gcc/x86_64-suse-linux/7/include;/usr/local/include;/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed;/usr/x86_64-suse-linux/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-qnIuid]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/binkma/.conda/envs/lamino/bin/ninja -v cmTC_69958 && [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -c /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -quiet -v -D_GNU_SOURCE /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -version -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccTOJMBj.s]
+        ignore line: [GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)]
+        ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/binkma/libs/libaio/include]
+        ignore line: [ /usr/include/c++/7]
+        ignore line: [ /usr/include/c++/7/x86_64-suse-linux]
+        ignore line: [ /usr/include/c++/7/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)]
+        ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: b173113e71986c3d169e65fd129b9b5e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/as -v --64 -o CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccTOJMBj.s]
+        ignore line: [GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+        ignore line: [ SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [[2/2] : && /usr/bin/c++  -L/soft/applications/conda/2024-04-29/mconda3/lib -Wl --enable-new-dtags -rpath /soft/applications/conda/2024-04-29/mconda3/lib -v CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_69958   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_69958' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/cc41cUNC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_69958 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/soft/applications/conda/2024-04-29/mconda3/lib -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/binkma/libs/libaio/lib -L. -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. --enable-new-dtags -rpath /soft/applications/conda/2024-04-29/mconda3/lib CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/cc41cUNC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_69958] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o]
+          arg [-L/soft/applications/conda/2024-04-29/mconda3/lib] ==> dir [/soft/applications/conda/2024-04-29/mconda3/lib]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/binkma/libs/libaio/lib] ==> dir [/home/binkma/libs/libaio/lib]
+          arg [-L.] ==> ignore
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../..]
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/soft/applications/conda/2024-04-29/mconda3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_69958.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/soft/applications/conda/2024-04-29/mconda3/lib] ==> [/soft/applications/conda/2024-04-29/mconda3/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7] ==> [/usr/lib64/gcc/x86_64-suse-linux/7]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/binkma/libs/libaio/lib] ==> [/home/binkma/libs/libaio/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../..] ==> [/usr/lib64]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o;/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/soft/applications/conda/2024-04-29/mconda3/lib;/usr/lib64/gcc/x86_64-suse-linux/7;/usr/lib64;/lib64;/home/binkma/libs/libaio/lib;/usr/x86_64-suse-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \\(R\\) Cuda compiler driver":
+      nvcc: NVIDIA (R) Cuda compiler driver
+      Copyright (c) 2005-2024 NVIDIA Corporation
+      Built on Thu_Mar_28_02:18:24_PDT_2024
+      Cuda compilation tools, release 12.4, V12.4.131
+      Build cuda_12.4.r12.4/compiler.34097967_0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler: /soft/compilers/cudatoolkit/cuda-12.4.1/bin/nvcc 
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      #$ _NVVM_BRANCH_=nvvm
+      #$ _NVVM_BRANCH_SUFFIX_=
+      #$ _SPACE_= 
+      #$ _CUDART_=cudart
+      #$ _HERE_=/soft/compilers/cudatoolkit/cuda-12.4.1/bin
+      #$ _THERE_=/soft/compilers/cudatoolkit/cuda-12.4.1/bin
+      #$ _TARGET_SIZE_=
+      #$ _TARGET_DIR_=
+      #$ _TARGET_DIR_=targets/x86_64-linux
+      #$ TOP=/soft/compilers/cudatoolkit/cuda-12.4.1/bin/..
+      #$ NVVMIR_LIBRARY_DIR=/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../nvvm/libdevice
+      #$ LD_LIBRARY_PATH=/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../lib:/soft/compilers/cudatoolkit/cuda-12.4.1/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-12.4.1/lib64:/soft/libraries/trt/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/lib:/soft/libraries/nccl/nccl_2.21.5-1+cuda12.4_x86_64/lib:/soft/libraries/cudnn/cudnn-cuda12-linux-x64-v9.1.0.70/lib:/home/binkma/libs/libaio/lib:/soft/perftools/darshan/darshan-3.4.4/lib:/opt/cray/pe/papi/7.0.1.2/lib64:/opt/cray/libfabric/1.15.2.0/lib64
+      #$ PATH=/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../nvvm/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/home/binkma/.conda/envs/lamino/bin:/soft/applications/conda/2024-04-29/mconda3/condabin:/soft/xalt/3.0.2-202408282050/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/soft/libraries/nccl/nccl_2.21.5-1+cuda12.4_x86_64/include:/opt/cray/pe/hdf5-parallel/1.12.2.9/bin:/opt/cray/pe/hdf5/1.12.2.9/bin:/opt/cray/pals/1.3.4/bin:/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/bin:/opt/cray/pe/mpich/8.1.28/bin:/opt/cray/pe/craype/2.7.30/bin:/opt/miniconda/bin:/soft/perftools/darshan/darshan-3.4.4/bin:/opt/cray/pe/perftools/23.12.0/bin:/opt/cray/pe/papi/7.0.1.2/bin:/opt/cray/libfabric/1.15.2.0/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/home/binkma/bm_dlrm/ChampSim/vcpkg:/opt/cray/pe/bin
+      #$ INCLUDES="-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"  
+      #$ LIBRARIES=  "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"
+      #$ CUDAFE_FLAGS=
+      #$ PTXAS_FLAGS=
+      #$ rm tmp/a_dlink.reg.c
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ cudafe++ --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+      #$ cicc --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+      #$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+      #$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+      #$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"
+      #$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/soft/compilers/cudatoolkit/cuda-12.4.1/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+      #$ g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCUDACompiler.cmake:523 (message)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Parsed CUDA nvcc implicit link information:
+        found 'PATH=' string: [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../nvvm/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/home/binkma/.conda/envs/lamino/bin:/soft/applications/conda/2024-04-29/mconda3/condabin:/soft/xalt/3.0.2-202408282050/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/soft/libraries/nccl/nccl_2.21.5-1+cuda12.4_x86_64/include:/opt/cray/pe/hdf5-parallel/1.12.2.9/bin:/opt/cray/pe/hdf5/1.12.2.9/bin:/opt/cray/pals/1.3.4/bin:/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/bin:/opt/cray/pe/mpich/8.1.28/bin:/opt/cray/pe/craype/2.7.30/bin:/opt/miniconda/bin:/soft/perftools/darshan/darshan-3.4.4/bin:/opt/cray/pe/perftools/23.12.0/bin:/opt/cray/pe/papi/7.0.1.2/bin:/opt/cray/libfabric/1.15.2.0/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/home/binkma/bm_dlrm/ChampSim/vcpkg:/opt/cray/pe/bin]
+        found 'LIBRARIES=' string: ["-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [cicc --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/soft/compilers/cudatoolkit/cuda-12.4.1/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/usr/bin/g++]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs;/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCUDACompiler.cmake:579 (message)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'PATH=' string: [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../nvvm/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/home/binkma/.conda/envs/lamino/bin:/soft/applications/conda/2024-04-29/mconda3/condabin:/soft/xalt/3.0.2-202408282050/bin:/soft/compilers/cudatoolkit/cuda-12.4.1/bin:/soft/libraries/nccl/nccl_2.21.5-1+cuda12.4_x86_64/include:/opt/cray/pe/hdf5-parallel/1.12.2.9/bin:/opt/cray/pe/hdf5/1.12.2.9/bin:/opt/cray/pals/1.3.4/bin:/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/bin:/opt/cray/pe/mpich/8.1.28/bin:/opt/cray/pe/craype/2.7.30/bin:/opt/miniconda/bin:/soft/perftools/darshan/darshan-3.4.4/bin:/opt/cray/pe/perftools/23.12.0/bin:/opt/cray/pe/papi/7.0.1.2/bin:/opt/cray/libfabric/1.15.2.0/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/home/binkma/bm_dlrm/ChampSim/vcpkg:/opt/cray/pe/bin]
+        found 'LIBRARIES=' string: ["-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [cicc --c++14 --gnu_version=70500 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/3.26.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/soft/compilers/cudatoolkit/cuda-12.4.1/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/usr/bin/g++]
+        found 'INCLUDES=' string: ["-I/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include"  ]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs" "-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib/stubs] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/lib] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs;/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-EjxZJc"
+      binary: "/home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-EjxZJc"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: "-L/soft/applications/conda/2024-04-29/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-04-29/mconda3/lib"
+      CMAKE_MODULE_PATH: "/home/binkma/.conda/envs/lamino/lib/python3.9/site-packages/skbuild/resources/cmake"
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-EjxZJc
+        
+        Run Build Command(s):/home/binkma/.conda/envs/lamino/bin/ninja -v cmTC_2cd7b && [1/2] /soft/compilers/cudatoolkit/cuda-12.4.1/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -E -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=4 -D __CUDACC_VER_BUILD__=131 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=4 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include
+         /home/binkma/libs/libaio/include
+         /usr/include/c++/7
+         /usr/include/c++/7/x86_64-suse-linux
+         /usr/include/c++/7/backward
+         /usr/lib64/gcc/x86_64-suse-linux/7/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -E -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=4 -D __CUDACC_VER_BUILD__=131 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=4 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include
+         /home/binkma/libs/libaio/include
+         /usr/include/c++/7
+         /usr/include/c++/7/x86_64-suse-linux
+         /usr/include/c++/7/backward
+         /usr/lib64/gcc/x86_64-suse-linux/7/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_002b7043_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -Wno-psabi -version -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccaGZLiI.s
+        GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)
+        	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include
+         /home/binkma/libs/libaio/include
+         /usr/include/c++/7
+         /usr/include/c++/7/x86_64-suse-linux
+         /usr/include/c++/7/backward
+         /usr/lib64/gcc/x86_64-suse-linux/7/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include
+         /usr/include
+        End of search list.
+        GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)
+        	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: b173113e71986c3d169e65fd129b9b5e
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/as -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccaGZLiI.s
+        GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+        [2/2] : && /usr/bin/g++ -L/soft/applications/conda/2024-04-29/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-04-29/mconda3/lib -v CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -o cmTC_2cd7b  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl -L"/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs" -L"/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib" && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper
+        OFFLOAD_TARGET_NAMES=hsa:nvptx-none
+        Target: x86_64-suse-linux
+        Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go --enable-offload-targets=hsa,nvptx-none, --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux
+        Thread model: posix
+        gcc version 7.5.0 (SUSE Linux) 
+        COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_2cd7b' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccrf79H0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2cd7b /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/soft/applications/conda/2024-04-29/mconda3/lib -L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs -L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/binkma/libs/libaio/lib -L. -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. --enable-new-dtags -rpath /soft/applications/conda/2024-04-29/mconda3/lib CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_2cd7b' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include]
+          add: [/home/binkma/libs/libaio/include]
+          add: [/usr/include/c++/7]
+          add: [/usr/include/c++/7/x86_64-suse-linux]
+          add: [/usr/include/c++/7/backward]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/include]
+          add: [/usr/local/include]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+          add: [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/include]
+        collapse include dir [/home/binkma/libs/libaio/include] ==> [/home/binkma/libs/libaio/include]
+        collapse include dir [/usr/include/c++/7] ==> [/usr/include/c++/7]
+        collapse include dir [/usr/include/c++/7/x86_64-suse-linux] ==> [/usr/include/c++/7/x86_64-suse-linux]
+        collapse include dir [/usr/include/c++/7/backward] ==> [/usr/include/c++/7/backward]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/include] ==> [/usr/lib64/gcc/x86_64-suse-linux/7/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed] ==> [/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include] ==> [/usr/x86_64-suse-linux/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/include;/home/binkma/libs/libaio/include;/usr/include/c++/7;/usr/include/c++/7/x86_64-suse-linux;/usr/include/c++/7/backward;/usr/lib64/gcc/x86_64-suse-linux/7/include;/usr/local/include;/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed;/usr/x86_64-suse-linux/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "src/cuda/CMakeLists.txt:1 (enable_language)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/binkma/bm_ANL/OpenLB/_skbuild/linux-x86_64-3.9/cmake-build/CMakeFiles/CMakeScratch/TryCompile-EjxZJc]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/binkma/.conda/envs/lamino/bin/ninja -v cmTC_2cd7b && [1/2] /soft/compilers/cudatoolkit/cuda-12.4.1/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -E -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=4 -D __CUDACC_VER_BUILD__=131 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=4 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include]
+        ignore line: [ /home/binkma/libs/libaio/include]
+        ignore line: [ /usr/include/c++/7]
+        ignore line: [ /usr/include/c++/7/x86_64-suse-linux]
+        ignore line: [ /usr/include/c++/7/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -E -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=4 -D __CUDACC_VER_BUILD__=131 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=4 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home/binkma/.conda/envs/lamino/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include]
+        ignore line: [ /home/binkma/libs/libaio/include]
+        ignore line: [ /usr/include/c++/7]
+        ignore line: [ /usr/include/c++/7/x86_64-suse-linux]
+        ignore line: [ /usr/include/c++/7/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=4' '-D' '__CUDACC_VER_BUILD__=131' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=4' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/cc1plus -quiet -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/tmpxft_002b7043_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_002b7043_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -Wno-psabi -version -o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccaGZLiI.s]
+        ignore line: [GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)]
+        ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include]
+        ignore line: [ /home/binkma/libs/libaio/include]
+        ignore line: [ /usr/include/c++/7]
+        ignore line: [ /usr/include/c++/7/x86_64-suse-linux]
+        ignore line: [ /usr/include/c++/7/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed]
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (SUSE Linux) version 7.5.0 (x86_64-suse-linux)]
+        ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: b173113e71986c3d169e65fd129b9b5e]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/as -v -I /soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o /var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccaGZLiI.s]
+        ignore line: [GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+        ignore line: [ SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/soft/compilers/cudatoolkit/cuda-12.4.1/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [[2/2] : && /usr/bin/g++ -L/soft/applications/conda/2024-04-29/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-04-29/mconda3/lib -v CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -o cmTC_2cd7b  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl -L"/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs" -L"/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib" && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=hsa:nvptx-none]
+        ignore line: [Target: x86_64-suse-linux]
+        ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go --enable-offload-targets=hsa nvptx-none  --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/7 --enable-ssp --disable-libssp --disable-libvtv --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-7 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --build=x86_64-suse-linux --host=x86_64-suse-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.5.0 (SUSE Linux) ]
+        ignore line: [COMPILER_PATH=/soft/xalt/3.0.2-202408282050/bin/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/binkma/libs/libaio/lib/:./:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-L/soft/applications/conda/2024-04-29/mconda3/lib' '-v' '-o' 'cmTC_2cd7b' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs' '-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccrf79H0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2cd7b /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/soft/applications/conda/2024-04-29/mconda3/lib -L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs -L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/binkma/libs/libaio/lib -L. -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. --enable-new-dtags -rpath /soft/applications/conda/2024-04-29/mconda3/lib CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/tmp/pbs.4062031.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/ccrf79H0.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2cd7b] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o]
+          arg [-L/soft/applications/conda/2024-04-29/mconda3/lib] ==> dir [/soft/applications/conda/2024-04-29/mconda3/lib]
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs]
+          arg [-L/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib] ==> dir [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/binkma/libs/libaio/lib] ==> dir [/home/binkma/libs/libaio/lib]
+          arg [-L.] ==> ignore
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib]
+          arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../..]
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/soft/applications/conda/2024-04-29/mconda3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_2cd7b.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o]
+          arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/soft/applications/conda/2024-04-29/mconda3/lib] ==> [/soft/applications/conda/2024-04-29/mconda3/lib]
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib] ==> [/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7] ==> [/usr/lib64/gcc/x86_64-suse-linux/7]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/binkma/libs/libaio/lib] ==> [/home/binkma/libs/libaio/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
+        collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../..] ==> [/usr/lib64]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o;/usr/lib64/gcc/x86_64-suse-linux/7/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/soft/applications/conda/2024-04-29/mconda3/lib;/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib/stubs;/soft/compilers/cudatoolkit/cuda-12.4.1/targets/x86_64-linux/lib;/usr/lib64/gcc/x86_64-suse-linux/7;/usr/lib64;/lib64;/home/binkma/libs/libaio/lib;/usr/x86_64-suse-linux/lib]
+        implicit fwks: []
+      
+      
+...

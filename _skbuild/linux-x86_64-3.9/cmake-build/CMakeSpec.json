@@ -1,0 +1,1 @@
+{"args": ["/home/binkma/.conda/envs/lamino/bin/cmake", "-DCMAKE_BUILD_TYPE:STRING=Release"], "version": "3.26.4", "environment": {"PYTHONNOUSERSITE": null, "PYTHONPATH": "/soft/xalt/3.0.2-202408282050/site_packages"}}
